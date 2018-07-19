@@ -9,7 +9,7 @@ sys.path.append("C:\\Users\\jmei\\Documents\\Code\\machine learning from scratch
 import model
 
 np.random.seed(20180718)
-random.seed(201805718)
+random.seed(20180718)
   
 iris = datasets.load_iris()
 
