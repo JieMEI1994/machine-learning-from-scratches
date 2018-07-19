@@ -27,7 +27,13 @@ test_label = np.stack(test_label)
 layers_dim = [4,4,4]
 
 model = model.vanilla_nural_network(layers_dim)
-model.train(train_data, train_label, 20000, 0.001)
+model.train(train_data, train_label,
+            iteration=200000,
+            learning_rate=0.001,
+            lambd = 0,
+            keep_prob = 1,
+            interrupt_threshold = 0.1,
+            print_loss = True)
 model.plot()
 prob = model.predict(test_data)
 predicet_label = np.argmax(prob,  axis=1)
