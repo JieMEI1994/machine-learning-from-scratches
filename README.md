@@ -14,8 +14,9 @@
     * [x] initialization function -- zero, random, he
     * [x] linear function
     * [x] activation function -- sigmoid, tanh, relu
-    * [ ] regularization function
+    * [x] dropout function
     * [x] output function -- softmax
+    * [x] regularization function -- l2
     * [x] optimization function -- vailla, momentum, rmsprop, adam
   * Model
     * [x] vanilla nural network
