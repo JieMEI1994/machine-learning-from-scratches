@@ -26,7 +26,7 @@ test_label = np.stack(test_label)
 
 layers_dim = [4,4,4]
 
-model = model.Dense(layers_dim)
+model = model.vanilla_nural_network(layers_dim)
 model.train(train_data, train_label, 20000, 0.001)
 model.plot()
 prob = model.predict(test_data)
