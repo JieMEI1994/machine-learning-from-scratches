@@ -21,7 +21,7 @@ class vanilla_nural_network:
         self.loss = []
         self.accuracy = []
 
-    def train(self, X, Y, iteration, learning_rate, lambd = 0, keep_prob = 1, print_loss = True):
+    def train(self, X, Y, iteration, learning_rate, lambd = 0, keep_prob = 1, interrupt_threshold = 0.1, print_loss = True):
         # import function
         init = initialization(self.layer_dims)
         lin = linear()
@@ -59,6 +59,9 @@ class vanilla_nural_network:
             # print
             if print_loss and i % 1000 == 0:
                 print("Iteration %i, Loss: %f, Accuracy: %.f%%" %(i, loss_tmp, acc_tmp*100))
+            if loss_tmp <= interrupt_threshold:
+                print("Iteration %i, Loss: %f <= Threshold: %f" %(i, loss_tmp, interrupt_threshold))
+                return
             # backward
             dA = classifier.backward(train_Y, prob)
             for l in range(len(self.layer_dims)-1, 1, -1):
