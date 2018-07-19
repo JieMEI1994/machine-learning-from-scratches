@@ -18,9 +18,9 @@
     * [x] output function -- softmax
     * [x] optimization function -- vailla, momentum, rmsprop, adam
   * Model
-    * [x] Vanilla Nural Network
-    * [ ] Convolutional Nural Network
-    * [ ] Recurrent Nural Network
+    * [x] vanilla nural network
+    * [ ] convolutional nural network
+    * [ ] recurrent nural network
     
 * Reinforcement Learning (to do)
   * Function:
