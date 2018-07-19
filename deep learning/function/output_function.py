@@ -8,6 +8,7 @@ class softmax:
 
     def loss(self, Y, Y_het):
         m = Y.shape[0]
+        np.clip(Y_het, 1e-100, 1-(1e-100))
         log_likelihood = -np.log(Y_het[range(m), Y])
         loss = (1.0 / m) * np.sum(log_likelihood)
         loss = np.squeeze(loss)

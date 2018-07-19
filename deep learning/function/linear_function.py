@@ -5,8 +5,8 @@ class linear:
         Z = np.dot(X, W) + b
         return Z
 
-    def backward(self, dZ, X, W, b):
+    def backward(self, dZ, X, W, b, m):
+        dW = (1.0 / m) * np.dot(X.T, dZ)
+        db = (1.0 / m) * np.sum(dZ, axis=0, keepdims=True)
         dX = np.dot(dZ, W.T)
-        dW = np.dot(X.T, dZ)
-        db = np.sum(dZ, axis=0)
         return dX, dW, db
