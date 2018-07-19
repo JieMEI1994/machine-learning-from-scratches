@@ -11,7 +11,7 @@ import sys
 sys.path.append("C:\\Users\\jmei\\Documents\\Code\\machine learning from scratch\\utili")
 from preprocess import one_hot_vector
 
-class Dense:
+class vanilla_nural_network:
     def __init__(self, hidden_layer_dims):
         self.layer_dims = hidden_layer_dims
         self.W = []
