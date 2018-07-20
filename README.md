@@ -18,6 +18,9 @@
     * [x] output function -- softmax
     * [x] regularization function -- l2
     * [x] optimization function -- vailla, momentum, rmsprop, adam
+    * [ ] padding function -- zero, constant
+    * [ ] convolution function
+    * [ ] polling function -- max
   * Model
     * [x] vanilla nural network
     * [ ] convolutional nural network
