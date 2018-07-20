@@ -39,7 +39,5 @@ class max:
                         input = sample_X[h_start:h_end, w_start:w_end, c]
                         output = dX
                         mask = (input == np.max(input))
-                        output[i, h_start:h_end, w_start:w_end, c] += np.multiply(mask, dZ[i, h_start:h_end, w_start:w_end, c])
+                        output[i, h_start:h_end, w_start:w_end, c] += np.multiply(mask, dZ[i, h, w, c])
         return output
-
-
