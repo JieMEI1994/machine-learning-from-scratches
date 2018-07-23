@@ -21,6 +21,7 @@
     * [x] padding function -- zero, constant
     * [x] convolution function
     * [x] polling function -- max
+    * [x] rurrent function -- vanilla, lstm
   * Model
     * [x] vanilla nural network
     * [ ] convolutional nural network
