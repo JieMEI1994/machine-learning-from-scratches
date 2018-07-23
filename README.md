@@ -29,3 +29,6 @@
 * Reinforcement Learning (to do)
   * Function:
   * Model:
+  
+* Thought:
+  
